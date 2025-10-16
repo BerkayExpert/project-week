@@ -62,6 +62,7 @@ export class World {
             let main_layer = new Array(rows).fill(null).map(() => new Array(columns).fill(0));
             draw_layer.forEach(element => {
                 let wall = new Wall({
+                    texture: texture,
                     position: {x: element.x, y: element.y}
                 })
                 wall.draw(ctx);

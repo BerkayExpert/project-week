@@ -42,7 +42,8 @@ window.addEventListener('load', function () {
 
             // Player setup
             this.player = new Player({
-                position: { x: 0, y: 5 }
+                position: { x: 0, y: 5 },
+                texture: "./images/spider.png"
             });
 
             // Enemy setup
@@ -62,7 +63,7 @@ window.addEventListener('load', function () {
                 ctx: ctx,
                 collision: true,
                 draw_layer: [{x: 10, y:10}],
-                texture: "./images/spider.png"
+                texture: "./images/lava.png"
                 // draw_layer: [{x: 0, y:5}, {x:2, y:10}, {x:19,y:19 }]
             });
 

@@ -2,11 +2,11 @@ import { GameObject } from "./game_objects.js";
 import { tile_size } from "./main.js";
 
 export class Wall extends GameObject {
-    constructor({position, textureO}) {
+    constructor({position, texture}) {
         super(position);
         this.texture = new Image();
         this.loaded = false;
-        this.texture.src = "./images/spider.png";
+        this.texture.src = texture;
 
 
         this.texture.onload = () => {
